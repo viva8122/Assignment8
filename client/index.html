@@ -41,13 +41,14 @@
 			<div class="col-sm-4 col-sm-offset-4">
 
 				<div class="checkbox"  ng-repeat="todo in todos">
-                                  <label>
-                                  <input type="checkbox"> {{ todo.text }}
-                                  </label>
-                                 </div>
+                 	<label>
+                    	<input type="checkbox"> {{ todo.text }}
+                    </label>
+                </div>
                              
 				<p class="text-center" ng-show="loading">
 					<span class="fa fa-spinner fa-spin fa-3x"></span>
+					Enter to do item and then click Add button
 				</p>
 
 			</div>
