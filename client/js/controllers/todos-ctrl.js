@@ -41,7 +41,7 @@ angular.module('todoController', [])
 
 			// validate the formData to make sure that something is there
 			// if form is empty, nothing will happen
-			if ($scope.formData.text != undefined) {
+			//if ($scope.formData.text != undefined) {
 				$scope.loading = true;
 
 				// call the create function from our service (returns a promise object)
@@ -54,7 +54,7 @@ angular.module('todoController', [])
 						$scope.formData = {}; // clear the form so our user is ready to enter another
 						$scope.todos = data; // assign our new list of todos
 					});
-			}
+			
 		};
 
 	}]);

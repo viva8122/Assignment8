@@ -45,7 +45,7 @@ module.exports = function(app) {
 		Todo.remove({
 			//text : req.body.text
 			//text : "Go shopping" //work
-			done : false
+			//done : true
 		}, function(err, todo) {
 			if (err)
 				res.send(err);
