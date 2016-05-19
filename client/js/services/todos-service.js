@@ -9,6 +9,9 @@ angular.module('todoService', [])
 			},
 			create : function(todoData) {
 				return $http.post('/api/todos', todoData);
+			},
+			delete : function(todoData) {
+				return $http.delete('/api/todos');
 			}
 
 		}
