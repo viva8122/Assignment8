@@ -44,6 +44,8 @@ module.exports = function(app) {
 		// clear a todo, information comes from AJAX request from Angular
 		Todo.remove({
 			//text : req.body.text
+			//text : "Go shopping" //work
+			done : false
 		}, function(err, todo) {
 			if (err)
 				res.send(err);
