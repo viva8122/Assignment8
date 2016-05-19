@@ -42,7 +42,8 @@
 
 				<div class="checkbox"  ng-repeat="todo in todos">
                  	<label>
-                    	<input type="checkbox"> {{ todo.text }}
+                    	<!--<input type="checkbox"> {{ todo.text }}-->
+                    	<input type="checkbox" ng-model="formData.__v"> {{ todo.text }}
                     </label>
                 </div>
                              
@@ -65,6 +66,9 @@
 
 					<!-- createToDo() WILL CREATE NEW TODOS -->
 					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+
+					<!-- clearToDo() WILL CLEAR ALL TODOS -->
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="clearTodo()">Clear</button>
 				</form>
 			</div>
 		</div>
